@@ -1,6 +1,5 @@
 #main-content {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -8,41 +7,36 @@
   text-align: center;
 }
 
-#main-text {
-  margin-top: 1rem;
-}
-
-#main-text h1 {
+.main-text h1 {
   color: var(--color-primary-white);
   font-size: 3.6rem;
-  margin: 1rem 0;
-  text-shadow: 1px 1px 3px var(--color-white);
+  text-shadow: 1px 1px 2px var(--color-white);
+  margin-top: 0.5rem;
 }
 
-#main-text h2 {
+.main-text h2 {
   color: var(--color-red-2);
   font-size: 2rem;
-  text-shadow: 1px 1px 3px var(--color-red-2-dark);
 }
 
 .car-main {
-  width: 60%;
+  width: 70%;
   max-width: 35rem;
   margin: 3rem 0;
 }
 
-.buttons-container {
+#buttons-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.buttons-container a {
+#buttons-container a {
   width: 10rem;
-  height: 5.8rem;
+  height: 5.5rem;
 
   font: 700 2rem Roboto;
 
-  margin-top: 20px;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,91 +51,83 @@
   transition: background-color 0.4s;
 }
 
-.buttons-container #know {
-  flex: 1 100%;
+#buttons-container .know {
   background: var(--color-red-1);
+  flex: 1 100%;
 }
 
-.buttons-container #work,
-.buttons-container #contact {
+#buttons-container .work,
+#buttons-container .contact {
   background: var(--color-red-2);
   flex: 1;
 }
 
-.buttons-container #work {
-  flex: 1;
+#buttons-container .work {
   margin-right: 1rem;
 }
 
-.buttons-container #work:hover,
-.buttons-container #contact:hover {
+#buttons-container .work:hover,
+#buttons-container .contact:hover {
   background: var(--color-red-2-dark);
 }
 
-.buttons-container #know:hover {
+#buttons-container .know:hover {
   background: var(--color-red-1-dark);
 }
 
-.address {
-  margin: 2rem 0;
-  line-height: 2rem;
-  font-weight: 400;
+#address {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-.address #title-address {
+#address h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.address #content-address #important-address {
-  color: var(--color-red-2);
-  font-weight: 700;
-}
-
-.network {
-  font-weight: 700;
-}
-
-.network #text {
-  color: var(--color-red-2);
-}
-
-.network #icons {
+#network .icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.network #icons a {
+#network .icons a {
   width: 20%;
-  margin: 1rem 1rem;
+  margin: 1rem 0.8rem;
 }
 
-#seguradoras {
+#network .icons a:hover {
+  opacity: 0.8;
+}
+
+.seguradoras {
   width: 70%;
-  max-width: 35rem;
-  margin: 1rem 0;
+  max-width: 40rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 1100px) {
   #main-content {
-    max-width: 1100px;
+    max-width: 1300px;
+    width: 100%;
+    height: 100vh;
 
     display: grid;
 
-    grid-template-rows: auto(100px, auto);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    grid-template-areas: 
-    "main-text . car car"
-    "buttons . car car"
-    "seguradoras network network address";
+    grid-template-areas:
+      "main-text . car car"
+      "buttons . car car"
+      "none none none none"
+      "seguradoras network network address";
+
+    column-gap: 2rem;
   }
 
-  #main-text {
+  .main-text {
     grid-area: main-text;
     text-align: left;
-    margin-top: 3.4rem;
   }
 
   .car-main {
@@ -150,31 +136,38 @@
     max-width: 100%;
   }
 
-  .buttons-container {
+  #buttons-container {
     grid-area: buttons;
-    margin-top: -3.5rem
   }
 
-  .address {
+  #buttons-container a {
+    margin: 0.5rem 0;
+  }
+
+  #address {
     grid-area: address;
     text-align: left;
   }
 
-  .network {
+  #network {
     grid-area: network;
     text-align: center;
   }
 
-  .network #icons img {
-    width: 40%;
+  #network .icons img {
+    width: 30%;
   }
 
-  .network #icons a {
-    margin: 0.5rem -1.5rem;
+  #network p {
+    font-size: 1.8rem;
   }
 
-  #seguradoras {
+  #network .icons a {
+    margin: 0.5rem -4rem;
+  }
+
+  .seguradoras {
     grid-area: seguradoras;
-    width: 120%;
+    width: 90%;
   }
 }
