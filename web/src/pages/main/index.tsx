@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 
 function Main() {
-  document.title = "Impactos Car";
 
   return (
     <div id="main-content">
