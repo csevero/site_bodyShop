@@ -10,6 +10,7 @@ import gh1 from "../../assets/images/estrutura/greenhouse/estufa1.jpeg";
 import gh2 from "../../assets/images/estrutura/greenhouse/estufa2.jpeg";
 import gh3 from "../../assets/images/estrutura/greenhouse/estufa3.jpeg";
 import loc1 from "../../assets/images/estrutura/location/loc1.jpeg";
+import loc2 from "../../assets/images/estrutura/location/loc2.jpeg";
 import spa1 from "../../assets/images/estrutura/space/spa1.jpeg";
 import spa2 from "../../assets/images/estrutura/space/spa2.jpeg";
 import spa3 from "../../assets/images/estrutura/space/spa3.jpeg";
@@ -69,7 +70,7 @@ function About() {
             Pode ficar tranquilo, seu carro estará seguro conosco! Somos
             credenciados nas seguintes Seguradoras
           </p>
-          <img src={bandeiras} alt="seguradoras" />
+          <img src={bandeiras} alt="imagem seguradoras" />
         </div>
         <div className="structure">
           <h1>Estrutura</h1>
@@ -77,13 +78,13 @@ function About() {
             <div className="greenhouse">
               <Slider {...slideConfig}>
                 <div>
-                  <img src={gh1} alt="" />
+                  <img src={gh1} alt="foto estufa 1" />
                 </div>
                 <div>
-                  <img src={gh2} alt="" />
+                  <img src={gh2} alt="foto estufa 2" />
                 </div>
                 <div>
-                  <img src={gh3} alt="" />
+                  <img src={gh3} alt="foto estufa 3" />
                 </div>
               </Slider>
               <h1>Estufa</h1>
@@ -95,9 +96,13 @@ function About() {
             <div className="location">
               <Slider {...slideConfig}>
                 <div>
-                  <img src={loc1} alt="" />
+                  <img src={loc1} alt="foto localizacao 1" />
+                </div>
+                <div>
+                  <img src={loc2} alt="foto localizacao 2" />
                 </div>
               </Slider>
+
               <h1>Localização</h1>
               <p>
                 Uma ótima localização, sendo fácil de localizar, a oficina se
@@ -108,13 +113,13 @@ function About() {
             <div className="space">
               <Slider {...slideConfig}>
                 <div>
-                  <img src={spa1} alt="" />
+                  <img src={spa1} alt="foto interior 1" />
                 </div>
                 <div>
-                  <img src={spa2} alt="" />
+                  <img src={spa2} alt="foto interior 2" />
                 </div>
                 <div>
-                  <img src={spa3} alt="" />
+                  <img src={spa3} alt="foto interior 3" />
                 </div>
               </Slider>
               <h1>Espaço</h1>
@@ -126,7 +131,7 @@ function About() {
             <div className="office">
               <Slider {...slideConfig}>
                 <div>
-                  <img src={office1} alt="" />
+                  <img src={office1} alt="foto escritório 1" />
                 </div>
               </Slider>
               <h1>Escritório</h1>
@@ -145,20 +150,20 @@ function About() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={faceIcon} alt="" />
+              <img src={faceIcon} alt="icone facebook" />
             </a>
             <a
               href="https://www.instagram.com/impactos.car/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={instaIcon} alt="" />
+              <img src={instaIcon} alt="icone instagram" />
             </a>
             <a href="tel:15996493449">
-              <img src={phoneIcon} alt="" />
+              <img src={phoneIcon} alt="icone telefone" />
             </a>
             <a href="https://api.whatsapp.com/send?phone=5515996493449&text=Ol%C3%A1%20quero%20fazer%20um%20or%C3%A7amento">
-              <img src={whatsIcon} alt="" />
+              <img src={whatsIcon} alt="icone whatsapp" />
             </a>
           </div>
           <h2>Ou nos localize pelo seu GPS</h2>

@@ -11,9 +11,9 @@ function Header() {
     <header className="header-top">
       <div className="top-bar-content">
         <Link to="/">
-          <img src={BackIcon} alt="voltar" />
+          <img src={BackIcon} alt="icone voltar" />
         </Link>
-        <img src={Silhueta} alt="silhueta" id="silhueta" />
+        <img src={Silhueta} alt="silhueta carro" id="silhueta" />
       </div>
     </header>
   );

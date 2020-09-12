@@ -22,7 +22,7 @@ function Contato() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={faceIcon} alt="" />
+              <img src={faceIcon} alt="icone facebook" />
               <p>Impactos Car</p>
             </a>
             <a
@@ -30,15 +30,15 @@ function Contato() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={instaIcon} alt="" />
+              <img src={instaIcon} alt="icone instagram" />
               <p>@impactos.car</p>
             </a>
             <a href="tel:15996493449">
-              <img src={phoneIcon} alt="" />
+              <img src={phoneIcon} alt="icone telefone" />
               <p>(15)3263-5723</p>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5515996493449&text=Ol%C3%A1%20quero%20fazer%20um%20or%C3%A7amento">
-              <img src={whatsIcon} alt="" />
+              <img src={whatsIcon} alt="icone whatsapp" />
               <p>(15)99649-3449</p>
             </a>
           </div>

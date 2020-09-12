@@ -20,7 +20,7 @@ function Main() {
         </h2>
       </div>
 
-      <img src={car} alt="carro de frente" className="car-main" />
+      <img src={car} alt="imagem central carro de frente" className="car-main" />
 
       <div id="buttons-container">
         <Link to="/sobre" className="know">
@@ -65,7 +65,7 @@ function Main() {
           </a>
         </div>
       </div>
-      <img src={seguradoras} alt="seguradoras" className="seguradoras" />
+      <img src={seguradoras} alt="imagem seguradoras" className="seguradoras" />
     </div>
   );
 }
