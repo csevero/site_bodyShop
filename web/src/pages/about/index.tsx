@@ -38,7 +38,7 @@ function About() {
         <div className="how-we-are">
           <h1>Quem somos</h1>
           <p>
-            A mais x anos na área de Funilaria e Pintura a Impactos Car vem
+            A mais de 5 anos na área de Funilaria e Pintura a Impactos Car vem
             trazendo comodidade para seus clientes, com serviços de qualidade e
             com preços acessíveis. A Impactos Car tem competência para trabalhar
             com veículos importados e nacionais com total experiência e
